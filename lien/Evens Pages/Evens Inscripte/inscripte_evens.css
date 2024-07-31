@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.evens-inscription{
+    width: 100%;
+    height: 100vh;
+}
+
+.evens-inscription .inscription-evens{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.inscription-evens .ins-evens-image{
+    width: 100%;
+    /* background-color: aqua; */
+    height: 100%;
+    position: relative;
+}
+
+.ins-evens-image img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.evens-inscription .evens-inscripte-compte{
+    width: 100%;
+    /* background-color: aqua; */
+    padding: 1rem 0;
+}
+
+.evens-inscripte-compte .compte-inscription{
+    max-width: 550px;
+    margin: auto;
+    /* background-color: blue; */
+}
+
+.compte-inscription h2{
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 2rem;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.compte-inscription p{
+    margin-top: 3rem;
+    font-size: 18px;
+}
+
+.compte-inscription .inscripte-champ{
+    padding: 15px;
+    /* background-color: blueviolet; */
+    width: 350px;
+    margin: 15px auto;
+    border-radius: 5px;
+    border: 1px solid rgb(196, 196, 196);
+}
+

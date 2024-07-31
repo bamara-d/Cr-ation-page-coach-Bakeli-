@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../blog.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&amp;display=swap" rel="stylesheet">
+    <title>Les fonctions en JavaScript</title>
+</head>
+<body>
+  <header class="header">
+    <div class="heading">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="2"
+        style="width: 4%; height: 25px;float: left;"
+        stroke="currentColor"
+        aria-hidden="true"
+        class="mr-2 hidden h-6 w-6 lg:inline"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"
+          class=""
+        ></path>
+      </svg>
+      <h2
+        style="
+          font-weight: 700;
+          line-height: 24px;
+          font-size: 16px;
+          color: rgb(0, 0, 0);
+        "
+      >
+        Rentrée du 09 Juillet
+      </h2>
+      <ul class="radial">
+        <li>Inscription en cours jusqu'au 19 Juillet 2024</li>
+        <li class="noneli">nombre de place limitees</li>
+        <strong>→</strong>
+      </ul>
+    </div>
+    <marquee class="heading2">
+      <h2>Rentrée du 09 Juillet</h2>
+      <ul class="radial2">
+        <li>Inscription en cours jusqu'au 19 Juillet 2024</li>
+        <li class="noneli2">nombre de place limitees</li>
+      </ul>
+    </marquee>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#"><img src="../logo.png" alt="image" /></a>
+      </div>
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+      <div class="lien">
+        <a href="../index.html" class="active">Accueil</a>
+
+        <a href="">
+          <li class="list" style="list-style: none">
+            <a href="../formations-certifiantes.html"
+              >Formation
+              <select>
+                <option value="#"></option></select
+            ></a>
+            <ul class="lien-sous">
+              <div class="sous1">
+                <li style="list-style: none">
+                  <a
+                    href="#"
+                    class="black"
+                    style="
+                      font-weight: 700;
+                      line-height: 24px;
+                      font-size: 16px;
+                      color: rgb(0, 0, 0);
+                    "
+                    >Disigner search</a
+                  >
+                  <p>En ligne et en presentiel</p>
+                </li>
+              </div>
+              <div class="sous2">
+                <li style="list-style: none">
+                  <a
+                    href="#formations-certifiantes"
+                    class="black-sous"
+                    style="
+                      font-weight: 700;
+                      line-height: 22px;
+                      font-size: 14px;
+                      color: rgb(0, 0, 0);
+                    "
+                    >Quickly find your next designer</a
+                  >
+                  <p>Explorez de nouvelles opportunités</p>
+                  <p>professionnelles avec nos formation...</p>
+                </li>
+
+                <li style="list-style: none">
+                  <a
+                    href="#"
+                    class="black-sous"
+                    style="
+                      font-weight: 700;
+                      line-height: 22px;
+                      font-size: 14px;
+                      color: rgb(0, 0, 0);
+                    "
+                    >Formation diplomantes</a
+                  >
+                  <p>Votre avenir academic commence</p>
+                  <p>ici!!! Embarquer pour un voyage...</p>
+                </li>
+              </div>
+            </ul>
+          </li>
+        </a>
+        <a href="../coach.html">Coachs</a>
+        <a href="#about">Evénements</a>
+        <a href="../blog.html">Blogs</a>
+      </div>
+
+      <div class="login">
+        <a href="../inscription.html"><button>Nous rejoindre</button></a>
+      </div>
+    </nav>
+  </header>
+
+
+    <section class="blog">
+        <div class="link-2">
+            <ul>
+                <li><a href="../index.html">Accueil</a> <i class="fa-solid fa-chevron-right"></i></li>
+                <li><a href="../blog.html">Articles</a> <i class="fa-solid fa-chevron-right"></i></li>
+                <li class="text-over">Les fonctions en JavaScript</li>
+            </ul>
+        </div>
+        <div class="blog-container-2">
+            <div class="content-entete">
+                <div class="image">
+                    <img src="../image/Blog/Blog image/01HYG41TD4CFNN50CH09P0DQT3.webp" alt="">
+                </div>
+                <a href="" class="j-domaine">Javascript</a>
+                <h1>Les fonctions en JavaScript</h1>
+                <p>01 juil. 2024</p>
+
+                <div class="liste">
+                    <h3>Table des matières:</h3>
+                    <ol>
+                        <li>Introduction aux Fonctions en JavaScript</li>
+                        <li>Déclaration d’une Fonction</li>
+                        <li>Appel d’une Fonction</li>
+                        <li>Paramètres et Arguments</li>
+                        <li>Valeur de Retour</li>
+                        <li>Fonctions en tant que Objets de Première Classe</li>
+                        <li>Conclusion</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="content-details">
+                <h2>Introduction aux Fonctions en JavaScript</h2>
+                <p>Les fonctions sont des blocs de code réutilisables qui permettent de structurer et d’organiser le code de manière efficace. En JavaScript, les fonctions jouent un rôle essentiel et sont utilisées pour effectuer des tâches spécifiques ou calculer des valeurs.</p>
+                
+                <h2>Déclaration d’une Fonction</h2>
+                <p>Il existe plusieurs manières de déclarer une fonction en JavaScript :</p>
+                <div class="contenu">
+                    <ol>
+                        <li>Fonction Déclarée</li>
+                        <div class="contenu-image">
+                            <img src="../image/Blog/Blog interne/Capture d'écran 2024-07-06 173517.png" alt="">
+                        </div>
+                        <p>Les fonctions déclarées sont “hoistées”, ce qui signifie qu’elles peuvent être appelées avant leur déclaration dans le code.</p>
+                        <li>Fonction Anonyme</li>
+                        <div class="contenu-image">
+                            <img src="../image/Blog/Blog interne/Capture d'écran 2024-07-06 173517.png" alt="">
+                        </div>
+                        <p>Les fonctions anonymes sont souvent assignées à des variables. Elles ne sont pas “hoistées”.</p>
+                        <li>Fonction Fléchée (Arrow Function)</li>
+                        <div class="contenu-image">
+                            <img src="../image/Blog/Blog interne/Capture d'écran 2024-07-06 173517.png" alt="">
+                        </div>
+                    </ol>
+                </div>
+                
+                <h2>Appel d’une Fonction</h2>
+                <p>Pour appeler une fonction, il suffit d’utiliser son nom suivi de parenthèses, avec les arguments nécessaires :</p>
+                <div class="contenu-image">
+                    <img src="../image/Blog/Blog interne/Capture d'écran 2024-07-06 173517.png" alt="">
+                </div>
+
+                <h2>Paramètres et Arguments</h2>
+                <p>Les fonctions peuvent accepter des paramètres, qui sont des variables spécifiées entre les parenthèses dans la déclaration de la fonction. Lorsqu’une fonction est appelée, les valeurs réelles passées aux paramètres sont appelées arguments.</p>
+                <div class="contenu-image">
+                    <img src="../image/Blog/Blog interne/Capture d'écran 2024-07-06 173517.png" alt="">
+                </div>
+                
+                <h2>Valeur de Retour</h2>
+                <p>Les fonctions peuvent renvoyer une valeur à l’aide du mot-clé return. Si aucune valeur de retour n’est spécifiée, la fonction renvoie undefined par défaut.</p>
+                <div class="contenu-image">
+                    <img src="../image/Blog/Blog interne/Capture d'écran 2024-07-06 173517.png" alt="">
+                </div>
+                
+                <h2>Fonctions en tant que Objets de Première Classe</h2>
+                <p>En JavaScript, les fonctions sont des objets de première classe, ce qui signifie qu’elles peuvent être :</p>
+                <ul>
+                    <li>Assignées à des variables</li>
+                    <li>Passées en arguments à d’autres fonctions</li>
+                    <li>Retournées par d’autres fonctions</li>
+                </ul>
+                <p>Exemple : Fonction comme Argument</p>
+                <div class="contenu-image">
+                    <img src="../image/Blog/Blog interne/Capture d'écran 2024-07-06 173517.png" alt="">
+                </div>
+                
+                <h2>Conclusion</h2>
+                <p>Les fonctions en JavaScript sont des outils puissants pour structurer le code et réutiliser des blocs de code. Comprendre comment les déclarer, les appeler et les utiliser efficacement est essentiel pour devenir un développeur JavaScript compétent.</p>    
+            </div>
+            <div class="profil">
+                <div class="profil-image">
+                    <img src="../image/Blog/profil/01HXD3V3XQWHGNXJBV3VKH7WYF.png" alt="">
+                </div>
+                <div class="profil-detail">
+                    <h4>Sokhna Fatou Gueye</h4>
+                    <p>Coach à Bakeli School of Technology</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+      <div class="fonter-container">
+        <div class="next">
+          <img src="logo.png" class="logo-footer" alt="">
+          <p class="nextP">Bakeli est une école de formation professionnelle dans les nouvelles technologies créer par Volkeno. Elle a formé + de 6000 étudiants et professionnels 
+            aux métiers des nouvelles technologies et du digital.</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/ndeyeami.thiam.121"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://twitter.com/NdeyeAmieThiam1"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.linkedin.com/in/ndeye-amie-thiam"><i class='bx bxl-linkedin'></i></a>
+                
+            </div>
+        </div>
+        <div class="serv-about">
+        <div class="service">
+          <h2>Bakeli</h2>
+          <div class="bot">
+          
+          <a href="">Accueil</a >
+          <a href="">Nos coachs</a >
+          <a href="">Evénements</a >
+          <a href="">blog</a >
+        </div>
+        </div>
+       <div class="about-footer">
+        <h2>Contacts</h2>
+        <div>
+        <a  class="about-flex" href="https://www.google.com/maps/place/Bakeli+School+of+Technology/@14.7437573,-17.4531447,17z/data=!3m1!4b1!4m6!3m5!1s0xec10dd476fedbb1:0x4b7c559a6d1a192b!8m2!3d14.7437573!4d-17.4531447!16s%2Fg%2F11qntl5vg1?entry=ttu">
+        Hlm Grand Yoff Villa N241 Pres du Terminus des bus Dakar Dem Dikk qui vont a l'AIBD
+      </a>
+        <h4>+221 78 546 15 51</h4>
+        <h4>contact@bakeli.tech</h4>
+        <!-- <h4>+221 78 546 15 51</h4> -->
+        </div>
+       </div> 
+       </div>
+    
+       <div class="icon-footer" style="width: 26%;">
+        
+        <h2>S'ABONNER À LA NEWSLETTER</h2>
+        <form action="">
+          <div class="input-groupe">
+        <input type="email" name="email"  placeholder="Votre Email" id="email" style="width: 130%; padding: 2rem;
+        margin-top: 1.5rem; border-style: solid;
+        border-color: #e5e7eb; border-radius: 6px;">
+        <button
+         style="padding: 1.4rem; margin-top: 1.75rem; background-color: rgb(0 150 136);border-radius: 10px;
+         color: rgb(255, 255, 255); cursor: pointer; font-size: 16px; font-weight: 600;line-height: 20px;"
+         >S'inscrire</button>
+      </div>
+      </form>
+        <!-- <i class='bx bxs-chevron-up-circle'></i> -->
+       </div>
+      </div>
+      <!-- <hr style="margin-top: -5rem;border-color: rgb(229 231 235 );"> -->
+      <div class="hr"></div>
+      <div class="Copyright">
+        <p style="text-align: center;font-size: 16px; font-weight: 400; margin-top: 2rem;
+         color: rgb(0,0,0); line-height: 24px;">© Copyright 2024, Tous droits réservés.
+        </p>
+      </div>
+  </footer>
+</body>
+</html>

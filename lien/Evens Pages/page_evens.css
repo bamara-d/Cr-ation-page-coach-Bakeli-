@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.evens-container{
+    margin: 15px 0;
+    margin-top: 12rem;
+    /* background-color: whitesmoke; */
+}
+
+.evens-container .evens-content{
+    width: 100%;
+    height: 65vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.evens-content .evens-image{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.evens-image::before{
+    content: '';
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.980), rgba(46, 45, 45, 0));
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.evens-image img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.evens-content .evens-info{
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding: 0 3rem;
+}
+
+.evens-info h1{
+    font-size: 5.8rem;
+}
+
+.evens-info .evens-details{
+    display: flex;
+    gap: 10px;
+}
+
+.evens-details i{
+    font-size: 18px;
+    color: orange;
+}
+
+.evens-details p{
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+/* partie a propos */
+
+.evens-propos{
+    padding: 1.5rem 1rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+}
+
+.evens-propos .propos-left{
+    padding: 10px 1.5rem;
+}
+
+.propos-left h3{
+    margin-bottom: 3rem;
+    font-size: 16px;
+}
+
+.propos-left p{
+    font-size: 16px;
+    border-bottom: 1px solid rgb(194, 194, 194);
+    padding-bottom: 15px;
+}
+
+.evens-propos .propos-right{
+    padding: 1rem 0.5rem;
+}
+
+.propos-right .card-inscript{
+    width: 100%;
+    padding: 2.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.325);
+}
+
+.card-inscript .card-text{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-bottom: 1px solid rgb(194, 194, 194);
+}
+
+.card-text i{
+    display: flex;
+    padding: 5px 8px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    border: 1px solid grey;
+    color: grey;
+    font-size: 17px;
+}
+
+.card-text h4{
+    font-size: 20px;
+    color: grey;
+}
+
+.card-inscript .card-partage{
+    margin-bottom: 20px;
+}
+
+.card-partage h4{
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+
+.card-partage .link-partage{
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.card-partage .link-partage i{
+    color: rgb(0, 0, 59);
+    font-size: 35px;
+}
+
+.card-inscript .inscript{
+    background-color: orange;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 7vh;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.card-inscript .inscript:hover{
+    text-decoration: underline;
+}
+
+@media (max-width:700px){
+    /* .evens-container{
+
+    } */
+
+    .evens-info h1{
+        font-size: 3rem;
+    }
+
+    .evens-propos{
+        grid-template-columns: none;
+        grid-template-rows: auto;
+    }
+}

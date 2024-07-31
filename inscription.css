@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+  
+  html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+  }
+  
+  body {
+    background-color: white;
+    color: #333333;
+    height: 100vh;
+    font-family: "Proxima Nova", sans-serif;
+  }
+  
+  :root {
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #128c76;
+  }
+  section {
+    width: 100%;
+  }
+
+  /* section-bannier */
+  .section-bannier{
+    width: 100%;
+    height: auto;
+   
+  }
+  .bannier-inscription img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    margin-top: 13.5rem;
+  }
+
+/* -------------inscirption------------------- */
+.inscription {
+  width: 100%;
+  padding: 40px;
+}
+
+.text-inscription {
+    text-align: end;
+    /* margin-top: 7rem;  */
+}
+.font {
+    font-weight: bold; 
+    text-underline-offset: 1px; 
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color:rgb(0, 0, 0);
+}
+.underline {
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color:rgb(0, 0, 0);
+}
+.underline-offset-1 {
+    text-underline-offset: 1px; 
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color:rgb(0, 0, 0);
+}
+.required::before {
+    content: "*";
+    color: red; 
+    margin-left: 1rem; 
+}
+.modalite {
+display: grid;
+grid-template-columns: repeat(2 , 1fr);
+gap: 3rem;
+padding: 2.75rem;
+}
+  input{
+    border: 1px solid ;
+  }
+  
+  .container-inscription {
+    padding: 1.25rem; 
+}
+
+/* Title */
+.title-inscription {
+    color: rgb(0, 150, 136); 
+    font-weight: 700; 
+    line-height: 24px;
+    font-size: 16px;
+    margin-bottom: 1.5rem; 
+    margin-top: 1.25rem; 
+}
+
+/* Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem; /* gap-4 */
+}
+
+/* Label */
+.label {
+    display: block; 
+    margin-bottom: 1.5rem; 
+    font-weight: 600; 
+    font-size: 14px; 
+    line-height: 20px;
+    color:  rgb(0, 0, 0);
+    font-family: Outfit, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* Input */
+.input {
+  margin-bottom: 1.5rem;
+    border: 1px solid #d1d5db; 
+    font-weight: bold; 
+    font-size: 0.875rem; 
+    padding: 1.5rem;
+    width: 100%; 
+    border-radius: 0.375rem; 
+    outline: none; 
+    transition: border-color 0.2s; 
+}
+
+.input:focus {
+    border-color: #2f855a; 
+    border-width: 2px;
+    box-shadow: 0 0 0 1px #2f855a; 
+}
+
+/* Textarea */
+.textarea {
+    border: 1px solid rgb(100, 116, 139); 
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    padding: 0.625rem; 
+    width: 100%;
+    border-radius: 0.375rem; 
+    outline: none;
+    resize: vertical;
+    transition: border-color 0.2s; 
+}
+
+.textarea:focus {
+    border-color: rgb(0, 150, 136); 
+    border-width: 2px; 
+    box-shadow: 0 0 0 1px rgb(0, 150, 136);
+}
+
+/* Counter */
+ .counter {
+    text-align: end; 
+    color: rgb(100, 116, 139);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px; 
+    margin-top: 0.5rem; 
+}
+
+.container-inscription {
+  padding: 1.25rem; 
+}
+
+/* Section */
+.section-personnel {
+  margin-bottom: 1.5rem;
+}
+
+/* Title */
+.title-personnel {
+  color: rgb(0, 150, 136); 
+    font-weight: 700; 
+    line-height: 24px;
+    font-size: 16px;
+    margin-bottom: 1.5rem; 
+    margin-top: 1.25rem; 
+  /* margin-bottom: 0.5rem;
+  margin-top: 1.25rem;  */
+}
+/* Radio Group */
+.radio-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 0.75rem; 
+}
+
+/* Radio Input */
+.radio-input {
+  width: 1rem;
+  height: 1rem;
+  color: #dd6b20;
+  border: 1px solid rgb(0, 150, 136);
+  accent-color: #dd6b20; 
+}
+
+.btn-inscription{
+  text-align: end;
+  font-family: Josefin Sans;
+  
+  
+  /* max-width: 100%; */
+  /* margin: auto; */
+  
+  
+}
+.bannier-inscription button{
+ 
+  color: #fff;
+  font-size: 1.7rem;
+  line-height: 24px;
+  line-height: 24px;
+}
+
+/* Radio Label */
+.radio-label {
+  margin-left: 0.5rem; 
+  padding: 3px;
+  font-family: Outfit, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 400; 
+    font-size: 14px; 
+    line-height: 20px;
+    color:  rgb(0, 0, 0);
+}
+  @media (max-width: 768px) {
+    body{
+     width: 100%;
+    }
+.bannier-inscription img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 9rem;
+}
+.inscription {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.text-inscription {
+  text-align: end;
+  margin-top: 4rem; 
+}
+.modalite {
+  display: grid;
+  grid-template-columns: repeat(1 , 1fr);
+  gap: 3rem;
+  padding: 30px;
+  }
+  .input {
+    margin-bottom: 1.5rem;
+      width: 100%; 
+  }
+  input{
+    width: 80%;
+  }
+  
+}

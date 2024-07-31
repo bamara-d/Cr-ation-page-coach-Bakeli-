@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.up{
+    width: 100%;
+    height: 150px; 
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .up img{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    object-fit: cover;
+  } 
+  
+  .up .up-nc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+  }
+  .up .up-nc h1{
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-style: normal;
+    font-weight: 700;
+    color: #fff;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .up .up-nc .up2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .up .up-nc .up-nc1{
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-style: normal;
+    font-weight: 400;
+    color: #ff9800;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .up .up-nc .up-nc2, .up-nc3{
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-style: normal;
+    font-weight: 400;
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+  }
+/* section .p1{  
+    background-image: url(image/page-bannier.png);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    position: relative;
+}
+
+section .p1{
+    padding-top: 70px;
+    text-align: center;
+    color: white;
+}
+.p1 h1{
+    position: absolute;
+    top: -2rem;
+}
+
+section span{
+    font-size: 30px;
+    gap: 10px;
+} */
+
+.partie{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: 20px; 
+    margin-top: 10rem; 
+}
+
+.partie1{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 20px;
+    justify-items: end;
+    align-items: center;
+    background-size: cover;
+    /* margin: 15px; */
+    background-color: white;
+    margin: 10px;
+    width: 104%;
+    
+}
+
+
+
+.partie1 img{
+    
+    width: 100%;
+    height: auto;
+    /* border-radius: 10px; */
+    /* padding-top: 20px; */
+    background-color: whitesmoke;
+}
+.mars{
+    opacity: 1;
+    background-color: white;
+    box-shadow: -1px 0.5px 5px whitesmoke;
+    border-radius: 0.375rem;
+    height: auto;
+    border: 1px solid rgb(243, 244, 246);
+    box-shadow: 0px 0px 4px 0px gray; 
+}
+
+.mars img{
+    /* background-image: url(image1.png) ; */
+   
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    background-size: cover;
+
+} 
+
+
+.mars .date{
+    color: orange;
+    padding-bottom: 10px;
+    margin: 10px;
+}
+
+.mars .title{
+    font-weight: bold;
+    margin-bottom: 10px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    margin: 10px;
+    
+}
+.mars i{
+    color: orange;
+    padding-top: 10px;
+}
+.mars a{
+text-decoration: none;
+color: rgb(0, 0, 0);
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+}
+
+.mars .letter{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    letter-spacing: 1px;
+    margin: 10px;
+}
+
+.mars span{
+    padding-top: 10px;
+}
+i{
+    margin: 6px;
+}
+
+
+
+.partie2{
+    background-color: white;
+    width: 400px;
+    height: 150px;
+    box-shadow: 0px 0px 4px 0px gray; 
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-left: 50px;
+}
+
+.partie2 input{
+    border: none;
+    background-color: rgb(242, 242, 243);
+  width: 100%;
+
+   
+}
+.partie2 p{
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 10px;
+
+}
+.input{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.partie2 .icon{
+    display: flex;
+    background-color: rgb(242, 242, 243);
+    padding: 12px;
+    margin: 10px;
+    width: 85%;
+
+}
+
+
+@media all and (max-width:900px){
+    .up{
+        width: 100%;
+        height: 200px; 
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+    .partie{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-top: 2rem;
+    }
+
+    .partie1{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 100%;
+    }
+    
+    .mars{
+        width: 100%;
+        height: auto;
+       
+    }
+
+}

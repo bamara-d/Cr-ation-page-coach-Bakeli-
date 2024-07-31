@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../blog.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&amp;display=swap" rel="stylesheet">
+    <title>Développement avec Django : Utilisation de l'ORM vs Utilisation sans ORM</title>
+</head>
+<body>
+  <header class="header">
+    <div class="heading">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="2"
+        style="width: 4%; height: 25px;float: left;"
+        stroke="currentColor"
+        aria-hidden="true"
+        class="mr-2 hidden h-6 w-6 lg:inline"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"
+          class=""
+        ></path>
+      </svg>
+      <h2
+        style="
+          font-weight: 700;
+          line-height: 24px;
+          font-size: 16px;
+          color: rgb(0, 0, 0);
+        "
+      >
+        Rentrée du 09 Juillet
+      </h2>
+      <ul class="radial">
+        <li>Inscription en cours jusqu'au 19 Juillet 2024</li>
+        <li class="noneli">nombre de place limitees</li>
+        <strong>→</strong>
+      </ul>
+    </div>
+    <marquee class="heading2">
+      <h2>Rentrée du 09 Juillet</h2>
+      <ul class="radial2">
+        <li>Inscription en cours jusqu'au 19 Juillet 2024</li>
+        <li class="noneli2">nombre de place limitees</li>
+      </ul>
+    </marquee>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#"><img src="../logo.png" alt="image" /></a>
+      </div>
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+      <div class="lien">
+        <a href="../index.html" class="active">Accueil</a>
+
+        <a href="">
+          <li class="list" style="list-style: none">
+            <a href="../formations-certifiantes.html"
+              >Formation
+              <select>
+                <option value="#"></option></select
+            ></a>
+            <ul class="lien-sous">
+              <div class="sous1">
+                <li style="list-style: none">
+                  <a
+                    href="#"
+                    class="black"
+                    style="
+                      font-weight: 700;
+                      line-height: 24px;
+                      font-size: 16px;
+                      color: rgb(0, 0, 0);
+                    "
+                    >Disigner search</a
+                  >
+                  <p>En ligne et en presentiel</p>
+                </li>
+              </div>
+              <div class="sous2">
+                <li style="list-style: none">
+                  <a
+                    href="#formations-certifiantes"
+                    class="black-sous"
+                    style="
+                      font-weight: 700;
+                      line-height: 22px;
+                      font-size: 14px;
+                      color: rgb(0, 0, 0);
+                    "
+                    >Quickly find your next designer</a
+                  >
+                  <p>Explorez de nouvelles opportunités</p>
+                  <p>professionnelles avec nos formation...</p>
+                </li>
+
+                <li style="list-style: none">
+                  <a
+                    href="#"
+                    class="black-sous"
+                    style="
+                      font-weight: 700;
+                      line-height: 22px;
+                      font-size: 14px;
+                      color: rgb(0, 0, 0);
+                    "
+                    >Formation diplomantes</a
+                  >
+                  <p>Votre avenir academic commence</p>
+                  <p>ici!!! Embarquer pour un voyage...</p>
+                </li>
+              </div>
+            </ul>
+          </li>
+        </a>
+        <a href="../coach.html">Coachs</a>
+        <a href="#about">Evénements</a>
+        <a href="../blog.html">Blogs</a>
+      </div>
+
+      <div class="login">
+        <a href="../inscription.html"><button>Nous rejoindre</button></a>
+      </div>
+    </nav>
+  </header>
+
+
+    <section class="blog">
+        <div class="link-2">
+            <ul>
+                <li><a href="../index.html">Accueil</a> <i class="fa-solid fa-chevron-right"></i></li>
+                <li><a href="../blog.html">Articles</a> <i class="fa-solid fa-chevron-right"></i></li>
+                <li class="text-over">Développement avec Django : Utilisation de l'ORM vs Utilisation sans ORM</li>
+            </ul>
+        </div>
+        <div class="blog-container-2">
+            <div class="content-entete">
+                <div class="image">
+                    <img src="../image/Blog/Blog image/django-orm-inspector-1024x447.png" alt="">
+                </div>
+                <a href="">Django</a>
+                <h1>Développement avec Django : Utilisation de l'ORM vs Utilisation sans ORM</h1>
+                <p>01 juil. 2024</p>
+
+                <div class="liste">
+                    <h3>Table des matières:</h3>
+                    <ol>
+                        <li>l’utilisation de Django sans ORM</li>
+                        <li>l’utilisation de Django ORM</li>
+                        <li>CONCLUSION</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="content-details">
+                <ol>
+                    <h2>l’utilisation de Django sans ORM</h2>
+                    <p>Sans l’utilisation de l’ORM (Object-Relational Mapping), Django serait une structure de développement web qui nécessiterait l’écriture directe de requêtes SQL pour interagir avec la base de données. Cela signifie que chaque interaction avec la base de données nécessiterait la création manuelle de requêtes SQL, l’exécution de ces requêtes, la gestion des résultats et la transformation des données récupérées en objets Python utilisables dans l’application.</p>
+                    <li>Voici comment Django ressemblerait sans l’utilisation de l’ORM :</li>
+                    <h5>Structure de code</h5>
+                    <ul>
+                        <li>Définition des Modèles : Sans ORM, les modèles de données ne seraient pas des classes Python étendant django.db.models.Model. Au lieu de cela, les tables de base de données devraient être créées manuellement avec du SQL pur, et chaque interaction avec ces tables nécessiterait l’utilisation de requêtes SQL directes dans le code.</li>
+                        <p>Exemple de définition de modèle sans ORM :</p>
+                        <div class="image-exemple">
+                            <img src="../image/Blog/Blog interne/Capture d'écran 2024-07-06 173517.png" alt="">
+                        </div>
+                        <li>Définition des Modèles : Sans ORM, les modèles de données ne seraient pas des classes Python étendant django.db.models.Model. Au lieu de cela, les tables de base de données devraient être créées manuellement avec du SQL pur, et chaque interaction avec ces tables nécessiterait l’utilisation de requêtes SQL directes dans le code.</li>
+                        <p>Exemple de définition de modèle sans ORM :</p>
+                        <div class="image-exemple">
+                            <img src="../image/Blog/Blog interne/Capture d'écran 2024-07-06 173517.png" alt="">
+                        </div>
+                        <p>Difficultés et Limitations Complexité et Maintenance : Écrire du SQL directement dans le code augmente la complexité et rend le code plus difficile à maintenir. Les développeurs doivent gérer manuellement les détails de la syntaxe SQL et s’assurer que les requêtes sont correctement formées.</p>
+                        <p>Portabilité : L’utilisation directe de SQL rendrait l’application moins portable entre différents systèmes de gestion de base de données, car chaque système a sa propre syntaxe SQL et ses particularités.</p>
+                        <p>Sécurité : Sans l’abstraction fournie par l’ORM, les développeurs doivent être très prudents pour éviter les failles de sécurité comme les injections SQL, en validant et en échappant correctement les données utilisateur.</p>
+                    </ul>
+                    <h2>l’utilisation de Django ORM</h2>
+                    <li>Voici comment Django ressemblerait avec l’utilisation d’ORM :</li>
+                    <p>L’ORM Django simplifie la manipulation des données en permettant aux développeurs d’interagir avec la base de données à l’aide d’objets Python et de méthodes de requête abstraites. Voici comment vous pourriez définir des modèles et interagir avec la base de données en utilisant l’ORM Django :</p>
+                    <p>Définition des Modèles Les modèles Django sont des classes Python qui définissent la structure des données de votre application. Chaque attribut de classe correspond à un champ de base de données, facilitant ainsi la création, la lecture, la mise à jour et la suppression des données.</p>
+                    <div class="image-exemple">
+                        <img src="../image/Blog/Blog interne/Capture d'écran 2024-07-06 173517.png" alt="">
+                    </div>
+                    <p>Avantages de l’ORM : L’ORM de Django facilite l’interaction avec la base de données en utilisant des classes Python pour représenter des tables de base de données, des objets pour représenter des lignes de table, et des méthodes pour effectuer des opérations CRUD (Create, Read, Update, Delete).</p>
+                    <p>Structure des requêtes : Django fournit une API riche pour structurer les requêtes en utilisant des méthodes de gestion de requêtes telles que .filter(), .exclude(), .annotate(), etc.</p>
+                    <p>Optimisation des requêtes : Utilisez des techniques comme select_related(), prefetch_related(), only(), defer() pour optimiser les performances des requêtes en minimisant le nombre de requêtes SQL générées et en limitant les données récupérées.</p>
+                </ol>
+                <h2>CONCLUSION</h2>
+                <p>L’utilisation de l’ORM Django simplifie considérablement le développement en automatisant la génération de requêtes SQL, en offrant une interface orientée objet intuitive, et en facilitant la gestion des relations entre les modèles. Cependant, elle peut ajouter une légère surcharge de performance par rapport à l’écriture directe de SQL, surtout pour des opérations simples et directes.</p>
+                <p>En revanche, l’écriture directe de requêtes SQL offre plus de contrôle sur les détails d’implémentation et peut être plus performante dans certains cas spécifiques, mais elle nécessite une expertise SQL avancée et peut rendre le code plus difficile à maintenir.</p>
+            </div>
+            <div class="profil">
+                <div class="profil-image">
+                    <img src="../image/Blog/profil/01HXD3V3XQWHGNXJBV3VKH7WYF.png" alt="">
+                </div>
+                <div class="profil-detail">
+                    <h4>Sokhna Fatou Gueye</h4>
+                    <p>Coach à Bakeli School of Technology</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+      <div class="fonter-container">
+        <div class="next">
+          <img src="logo.png" class="logo-footer" alt="">
+          <p class="nextP">Bakeli est une école de formation professionnelle dans les nouvelles technologies créer par Volkeno. Elle a formé + de 6000 étudiants et professionnels 
+            aux métiers des nouvelles technologies et du digital.</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/ndeyeami.thiam.121"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://twitter.com/NdeyeAmieThiam1"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.linkedin.com/in/ndeye-amie-thiam"><i class='bx bxl-linkedin'></i></a>
+                
+            </div>
+        </div>
+        <div class="serv-about">
+        <div class="service">
+          <h2>Bakeli</h2>
+          <div class="bot">
+          
+          <a href="">Accueil</a >
+          <a href="">Nos coachs</a >
+          <a href="">Evénements</a >
+          <a href="">blog</a >
+        </div>
+        </div>
+       <div class="about-footer">
+        <h2>Contacts</h2>
+        <div>
+        <a  class="about-flex" href="https://www.google.com/maps/place/Bakeli+School+of+Technology/@14.7437573,-17.4531447,17z/data=!3m1!4b1!4m6!3m5!1s0xec10dd476fedbb1:0x4b7c559a6d1a192b!8m2!3d14.7437573!4d-17.4531447!16s%2Fg%2F11qntl5vg1?entry=ttu">
+        Hlm Grand Yoff Villa N241 Pres du Terminus des bus Dakar Dem Dikk qui vont a l'AIBD
+      </a>
+        <h4>+221 78 546 15 51</h4>
+        <h4>contact@bakeli.tech</h4>
+        <!-- <h4>+221 78 546 15 51</h4> -->
+        </div>
+       </div> 
+       </div>
+    
+       <div class="icon-footer" style="width: 26%;">
+        
+        <h2>S'ABONNER À LA NEWSLETTER</h2>
+        <form action="">
+          <div class="input-groupe">
+        <input type="email" name="email"  placeholder="Votre Email" id="email" style="width: 130%; padding: 2rem;
+        margin-top: 1.5rem; border-style: solid;
+        border-color: #e5e7eb; border-radius: 6px;">
+        <button
+         style="padding: 1.4rem; margin-top: 1.75rem; background-color: rgb(0 150 136);border-radius: 10px;
+         color: rgb(255, 255, 255); cursor: pointer; font-size: 16px; font-weight: 600;line-height: 20px;"
+         >S'inscrire</button>
+      </div>
+      </form>
+        <!-- <i class='bx bxs-chevron-up-circle'></i> -->
+       </div>
+      </div>
+      <!-- <hr style="margin-top: -5rem;border-color: rgb(229 231 235 );"> -->
+      <div class="hr"></div>
+      <div class="Copyright">
+        <p style="text-align: center;font-size: 16px; font-weight: 400; margin-top: 2rem;
+         color: rgb(0,0,0); line-height: 24px;">© Copyright 2024, Tous droits réservés.
+        </p>
+      </div>
+  </footer>
+</body>
+</html>
